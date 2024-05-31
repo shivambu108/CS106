@@ -1,15 +1,15 @@
 ;exchange  
-mov 3000h,1
-mov 3001h,2
-mov 3002h,3
+mov 3000h,AA
+mov 3001h,BB
+mov 3002h,CC
 
-mov 5000h,12
+mov 5000h,11
 mov 5001h,22
-mov 5002h,43
+mov 5002h,33
 
 mov cx,0003h
 mov si,3000h
-mov di,5000h
+mov di,4000h
 
 back:
 mov al,[si]
