@@ -1,11 +1,11 @@
 ;add numbers in an array  
-mov 501h,55
-mov 502h,44
-mov 503h,33
-mov 504h,22
-mov 505h,11
+mov 1501h,55
+mov 1502h,44
+mov 1503h,33 ;numbers to be added
+mov 1504h,22
+mov 1505h,11
 
-mov si,0500h
+mov si,1500h
 mov cl,[si]
 dec cl
 inc si
