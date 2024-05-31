@@ -7,9 +7,14 @@ mov al,00
 adc al,al
 mov ds:[0201h],al   
 
+mov al,56h                      
+mov bl,71h
+add al,bl
+mov ds:[0202H],al
+
             
 ;add 16 bit with carry
-mov ax,2461h
-mov bx,4321h
+mov ax,2481h
+mov bx,48E7h
 adc ax,bx
 mov ds:[0200h],ax    
