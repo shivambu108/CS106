@@ -1,17 +1,19 @@
-;search a number 
+;search a given number number in the array
 MOV SI, 0500H
 MOV CL, [SI]
 MOV CH, 00H
 INC SI
 MOV BL, [SI]
 INC SI
-L1:  
+
+BACK:  
 MOV AL, [SI]
 CMP AL, BL
-JNE SKIP
+JNE FWD
 MOV [SI], 00H     
-SKIP:
+
+FWD:
 INC SI
 DEC CL
-JNZ L1
+JNZ BACK
 HLT  
