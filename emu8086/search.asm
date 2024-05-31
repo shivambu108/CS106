@@ -1,0 +1,17 @@
+;search a number 
+MOV SI, 0500H
+MOV CL, [SI]
+MOV CH, 00H
+INC SI
+MOV BL, [SI]
+INC SI
+L1:  
+MOV AL, [SI]
+CMP AL, BL
+JNE SKIP
+MOV [SI], 00H     
+SKIP:
+INC SI
+DEC CL
+JNZ L1
+HLT  
