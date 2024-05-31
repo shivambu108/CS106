@@ -1,16 +1,17 @@
 ;daa das
 
-addition
+;addition
 mov al,89h
 mov bl,68h
 add al,bl
 daa        
 adc ah,00h
-hlt               
+            
          
-subtraction
-mov al,78h     
-mov bl,44h
+;subtraction
+mov al,32h     
+mov bl,93h
 sub al,bl
 das
+
 hlt
