@@ -1,12 +1,16 @@
 ;transfer block of elements
-mov 1800h,1
-mov 1801h,2
-mov 1802h,3
-mov 1803h,4
-mov 1804h,5
-mov si,1800h
-mov di,1900h
+mov 1500h,11
+mov 1501h,22
+mov 1502h,33
+mov 1503h,44
+mov 1504h,55
+
+mov si,1500h
+mov di,1600h
+
 mov cx,0005h
+
 rep movsb
+
 hlt
 ret
